@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+:root{
+    --navy-850: hsl(217, 28%, 15%);
+    --navy-900: hsl(218, 28%, 13%);
+    --navy-950: hsl(216, 53%, 9%);
+    --navy-800: hsl(219, 30%, 18%);
+    --teal-200: hsl(176, 68%, 64%);
+    --cyan-500: hsl(198, 60%, 50%);
+    --red-500: hsl(0, 100%, 63%);
+}
+
+body{
+    font-family: 'Open sans';
+    background-color: var(--navy-850);
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Raleway';
+    padding: 98px 105px;
+}
+
+.fylo_logo{
+    width: 235px;
+    height: auto;
+}
+
+.features{
+    display: flex;
+    gap: 5rem;
+}
+
+header h3{
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway';
+    background-image: url('./images/bg-curvy-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    background-color: var(--navy-850);
+}
+
+.illu_intro{
+    width: 52%;
+    height: 52%;
+}
+
+h1{
+    text-align: center;
+    font-size: 3.2rem;
+    margin-top: 4rem;
+}
+
+.container p{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3%;
+}
+
+.container button{
+    background: linear-gradient(90deg, var(--teal-200), var(--cyan-500));
+    color: white;
+    padding: 1.5rem 8rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Raleway';
+    margin-bottom: 10rem;
+}
+
+.container button:hover{
+    background: #8dd9e4;
+}
+
+.main{
+    background-color: var(--navy-900);
+}
+
+.bloc_1{
+    display: flex;
+    justify-content: center;
+}
+
+.access, .real_time, .store{
+    width: 600px;
+    height: 350px;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.security{
+    width: 600px;
+    height: 350px;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.access img{
+    width: 18%;
+    height: 38%;
+}
+
+.security img{
+    width: 14.5%;
+    height: 38.5%;
+}
+
+.real_time img{
+    width: 17%;
+    height: 32%;
+}
+
+.store img{
+    width: 20%;
+    height: 32%;
+}
+
+.access h3, .security h3, .real_time h3, .store h3{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.access p, .security p, .real_time p, .store p{
+    font-size: 1.1rem;  
+}
+
+.bloc_2 .top{
+    display: flex;  
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.text{
+    margin-left: 6rem;
+}
+
+.illu_stay_productive{
+    width: 45%;
+    height: 45%;
+}
+
+.bloc_2 .top h2{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    margin-top: 10rem;
+    font-family: 'Raleway';
+}
+
+.bloc_2 .top p{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.bloc_2 .top a{
+    text-decoration: none;
+    color: var(--teal-200);
+    font-size: 1.3rem;
+    font-weight: 400;
+    border-bottom: 1px solid var(--teal-200);
+}
+
+.bloc_2 .top a:hover{
+    color: white;
+    border-bottom: white solid 1px;
+}
+
+.bloc_2 .top a:hover .icon_arrow:hover{
+    background-color: white;
+}
+
+.bloc_2 .bot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+    gap: 50px;
+}
+
+.bloc_2 .bot .container_image{
+    display: flex;
+    position: relative; /* Pour positionner .bg_quotes par rapport à ce conteneur */
+}
+
+.satish, .bruce, .iva{
+    width: 480px;
+    height: 260px;
+    background-color: var(--navy-800);
+    padding: 55px 35px;
+    margin-bottom: 470px;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.satish p, .bruce p, .iva p{
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+}
+
+.satish h3, .bruce h3, .iva h3{
+    font-size: 13px;
+    margin-top: 0.4rem;
+    letter-spacing: 1px;
+}
+
+.satish h4, .bruce h4, .iva h4{
+    font-size: 8px;
+    margin-top: 0.2rem;
+    letter-spacing: 1px;
+}
+
+.avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+}
+
+.bg_quotes{
+    position: absolute;
+    top: 3325px;
+    left: 170px;
+    width: 70px;
+    height: auto;
+    z-index: 0;
+}
+
+.get_started{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 1125px;
+    height: 350px;
+    left: 375px;
+    top: 243rem;
+    background-color: var(--navy-850);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.get_started h3{
+    font-size: 2.5rem;
+    margin-top: 3.5rem;
+}
+
+.get_started p{
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.get_started input{
+    width: 650px;
+    height: 60px;
+    border-radius: 50px;
+    padding: 0 20px 0 50px;
+    font-size: 1rem;
+    border: none;
+    margin-right: 30px;
+    outline: none;
+}
+
+.get_started button{
+    background: linear-gradient(90deg, var(--teal-200), var(--cyan-500));
+    color: white;
+    width: 250px;   
+    height: 60px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Raleway';
+}
+
+.get_started button:hover{
+    background: #8dd9e4;
+}
+
+.get_started h4{
+    text-align: start;
+    margin-left: 146px;
+    color: var(--red-500);
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+footer{
+    background-color: var(--navy-950);
+    height: 600px;
+    padding: 225px 0 0 150px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.fylo_logo_footer{
+    width: 220px;
+    height: auto;
+}
+
+.footer_main{
+    display: flex;
+    margin-top: 3.5rem;
+}
+
+.footer_main p{
+    margin-left: 2.5rem;
+    font-size: 20px
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+}
+
+i{
+    scale: 1.5;
+}
+
+.contact i{
+    scale: 1.5;
+    margin-right: 2.5rem;
+}
+
+.contact .mt{
+    margin-top: 1.5rem;
+}
+
+.contact a{
+    margin-right: 14rem;
+    margin-left: 3rem;
+}
+
+.about h3{
+    margin-bottom: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.about h3:hover{
+    font-weight: 700;
+}
+
+.contact_us{
+    margin-left: 7rem;
+    margin-right: 12rem;
+}
+
+.contact_us h3{
+    margin-bottom: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.contact_us h3:hover{
+    font-weight: 700;
+}
+
+.icon_social{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.fb{
+    border: 1px solid white;
+    width: 41px;
+    height: 43px;
+    padding-top: 11px;
+    padding-left: 13px;
+    border-radius: 50%;
+}
+
+.twitter{
+    border: 1px solid white;
+    width: 41px;
+    height: 43px;
+    padding-top: 10px;
+    padding-left: 12px;
+    border-radius: 50%;
+}
+
+.insta{
+    border: 1px solid white;
+    width: 41px;
+    height: 42px;
+    padding-top: 9px;
+    padding-left: 12px;
+    border-radius: 50%;
+}
+
+.icon_social a:hover{
+    color: var(--teal-200);
+    border-color: var(--teal-200);
+}
