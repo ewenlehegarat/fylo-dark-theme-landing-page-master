@@ -57,13 +57,18 @@ body{
         background-size: 100%;
         background-position: 50% 53%;
         color: var(--White);
-        text-align: center;
         font-family: 'Raleway';
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         img{
             width: 280px;
             margin-bottom: 90px;
         }
         div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             padding: 40px 55px 0 55px;
             background-color: var(--Navy-900);
             text-align: center;
@@ -144,10 +149,11 @@ body{
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    img{
+                        width: 25px;
+                        border-radius: 50%;
+                    }
                 }
-            }
-            img{
-                width: 30px;
             }
         }
     }
