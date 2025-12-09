@@ -300,3 +300,41 @@ body{
         }
     }
 }
+
+@media screen and (min-width: 600px){
+    body{
+        header{
+            padding: 75px 75px 0 75px;
+            img{
+                width: 175px;
+            }
+            nav{
+                gap: 40px;
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
+        .testimonials{
+            background-position: 50% 100%;
+            img{
+                width: 750px;
+            }
+            div{
+                h1{
+                    font-size: 40px;
+                    width: 750px;
+                }
+                p{
+                    width: 600px;
+                    font-size: 20px;
+                }
+                button{
+                    width: 300px;
+                    height: 60px;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
