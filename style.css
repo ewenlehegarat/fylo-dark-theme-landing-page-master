@@ -336,5 +336,36 @@ body{
                 }
             }
         }
+        main{
+            .bloc1{
+                width: 1000px;
+                margin: 0 auto;
+                div{
+                    img{
+                        width: 100px;
+                    }
+                    h2{
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 15px;
+                        width: 360px;
+                    }
+                }
+                .div2{
+                    img{
+                        width: 75px;
+                    }
+                }
+            }
+        }
+        section{
+            flex-direction: row;
+            justify-content: center;
+            .image_illu{
+                width: 40%;
+                margin-right: 50px;
+            }
+        }
     }
 }
